@@ -24,7 +24,6 @@ function Sidebar() {
                     data: doc.data(),
                 })))
         ));
-
         return () => {
             unsubscribe();
         }
@@ -58,7 +57,7 @@ function Sidebar() {
                 <div className="sidebar__searchContainer">
                     <SearchOutlined />
                     <input
-                        name="inupt"
+                        name="search"
                         placeholder="Search room"
                         type="text"
                         onChange={e => setSearch(e.target.value)}
